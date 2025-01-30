@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+            width: 100%;
+        }
+         .header{
+            height: 65px;
+            background-color: lightpink;
+        }
+        .container{
+            width: 1760px;
+            margin: 0 auto;
+        }
+        .menue li {
+            margin-left: 40px;
+            list-style-type: none;
+            float: left;
+            text-decoration: none;
+            line-height: 65px;
+        }
+        .menue li a {
+            text-decoration: none;
+            color: #fff;
+            font: 25px Arial, sans-serif; /* 添加 Arial 字体，并设置字号为 14px */
+            font-family: '幼圆', Arial, sans-serif; /* 添加幼圆字体，并设置备用字体为 Arial 和 sans-serif */
+        }
+        .menue li button {
+            text-decoration: none;
+            background-color: #ffffff00;
+            font: 25px Arial, sans-serif; /* 添加 Arial 字体，并设置字号为 14px */
+            border: none; /* 添加这一行来移除边框 */
+            color: #fff;
+            font: 25px Arial, sans-serif; /* 添加 Arial 字体，并设置字号为 14px */
+            font-family: '幼圆', Arial, sans-serif;
+        }
+        .first{
+            background-image: url(./beijing1.jpg);
+            background-size: cover; /* 确保图片覆盖整个页面 */
+            background-repeat: no-repeat; /* 防止图片重复 */
+            height: 620px;
+       }
+       
+       .first h2{
+            color: #ffffff00;
+            text-align: center;
+            font-family:'幼圆';
+            font-size: 50px;
+            
+        }
+        .first h1{
+            color: #ffffff;
+            text-align: center;
+            font-family:'幼圆';
+            font-size: 36px;
+            
+        }
+        .first p{
+            color: #ffffff;
+            text-align: center;
+            margin-top: 30px;
+            font-family:'幼圆';
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+       .b{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-top: 30px;
+            
+       }
+       .b img{
+            width: 150px;
+            height: 150px;
+            margin: 0 50px; 
+       }
+       .shijianx{
+        background-image: url(./beijing2.png); 
+        background-size: cover; /* 确保图片覆盖整个页面 */
+        background-repeat: no-repeat; /* 防止图片重复 */
+        height: 720px;
+       }
+       .shijianx h4{
+        color: #ffffff00;
+        text-align: center;
+        font-family:'幼圆';
+        font-size: 36px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+       }
+       .shijianx h3{
+        color: #ff0000;
+        text-align: center;
+        font-family:'幼圆'; 
+        font-size: 36px;
+        
+        margin-bottom: 30px;
+       }
+       .rongqi{
+        width: 720px;
+        height: 520px;
+        background-color: #ffffff;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: auto; /* 添加这一行来显示滚动条 */
+       }
+       .rongqi p{
+        color: #000000;
+        text-align: center;
+        font-family:'楷体';
+        font-size: 20px;
+        padding-top: 30px;
+       }
+      .jinian{
+        background-image: url(./beijing3.png);
+        background-size: cover; /* 确保图片覆盖整个页面 */
+        background-repeat: no-repeat; /* 防止图片重复 */
+        height: 720px;
+       }
+      .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .photo {
+            margin: 10px;
+            text-align: center;
+            margin-left: 40px;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            width: 300px;
+            height: 225px
+        }
+        .caption {
+            margin-top: 5px;
+            font-style: italic;
+        }
+        .jinian h4{
+            color: #ffffff00;
+            text-align: center;
+            font-family:'幼圆';
+            font-size: 50px;
+            
+        }
+        .jinian h3{
+            color: #ffffff;
+            text-align: center;
+            font-family:'幼圆';
+            font-size: 36px;
+            
+        }
+    </style>
+</head>
+<body>
+    <audio id="myAudio" src="./music.ogg"></audio>
+    <div class="header">
+        <div class="container">
+            <div class="menue">
+                <ul>
+                    <li><a href="">主页</a></li>
+                    <li><a href="">时间线</a></li>
+                    <li><a href="">纪念墙</a></li>
+                    <li><a href="./1.html">新年快乐</a></li>
+                    <li><button onclick="playAudio()">播放音频</button></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function playAudio() {
+            audio.play();
+        }
+    </script>
+    <div class="first">
+        <h2>------</h2>
+        <h1>遇见你是我的小幸运</h1>
+        <p>喜欢你</p>
+
+        <div class="b">
+        <img src="./2.jpg" alt="" >
+        <img src="./1 (2).jpg" alt="">
+        </div>
+    
+    <p id="hours-passed"></p>
+    
+    
+    <script>
+        // 设置特定日期和时间（例如：2025年1月18日22点）
+        var specificDate = new Date('2025-01-18T22:00:00');
+
+        // 获取当前日期和时间
+        var currentDate = new Date();
+
+        // 计算时间差（以毫秒为单位）
+        var timeDiff = currentDate - specificDate;
+
+        // 将时间差转换为小时数
+        var hours = Math.floor(timeDiff / (1000 * 60 * 60));
+
+        // 将时间差转换为天数
+        var days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)+1);
+
+        // 更新页面上的文本内容
+        document.getElementById('hours-passed').innerHTML = '现在是我们成为伴侣第'+days+'天，也是' + hours + '小时';
+    </script>
+    <p>愿我们共度这美好时光</p>
+    </div>
+
+    <div class="shijianx">
+        <h4>哈哈</h4>
+        <h3>我们的恋爱历程</h3>
+        <div class="rongqi">
+            <p>2025年1月18日，我向你表白</p>
+            <p>2025年1月19日，我们倾吐心声，QQ绑定情侣关系，更换情头</p>
+            <p>2025年1月20日，我们动态官宣，探讨哲学</p>
+            <p>2025年1月21日，我遇到了ma-y的考验</p>
+            <p>2025年1月22日，我为你表演魔术</p>
+            <p>2025年1月23日，这个网页1.0诞生，我们约定晚安</p>
+            <p>2025年1月24日，我们互倾心声，相互约定</p>
+            <p>2025年1月25日，我们玩了蛋仔派对，你整理了人机语录</p>
+            <p>2025年1月26日，我们获得了神仙眷侣称号，你对一件事很生气</p>
+            <p>2025年1月27日，你今年的最后一节课，你因为我的选择生气了</p>
+            <p>2025年1月28日，你因为我的不温柔而生气，而我也做了一件对不起你的事</p>
+            <p>2025年1月29日，我们一起看了电影《釜山行》，我们也玩了真心话大冒险</p>
+            <p></p>
+            <p>......</p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <div class="jinian">
+        <h4>哈哈</h4>
+        <h3>我们的纪念墙</h3>
+        <div class="photo-container">
+            <div class="photo">
+                <img src="./p1.jpg" alt="照片1">
+                <p class="caption">这是你认为自己最好看的一张~</p>
+            </div>
+            <div class="photo">
+                <img src="./p2.jpg" alt="照片2">
+                <p class="caption">这是你送给我的小爱心~</p>
+            </div>
+            <div class="photo">
+                <img src="./p3.jpg" alt="照片3">
+                <p class="caption">这是我们一起玩的蛋仔~</p>
+            </div>
+            <div class="photo">
+                <img src="./p4.jpg" alt="照片3">
+                <p class="caption">这是你拍的好看烟霞~</p>
+            </div>
+            <div class="photo">
+                <img src="./p5.jpg" alt="照片3">
+                <p class="caption">这是你的可爱小鼠~</p>
+            </div>
+            <div class="photo">
+                <img src="./p6.jpg" alt="照片3">
+                <p class="caption">这是你的生日~</p>
+            </div>
+            
+            <!-- 可以继续添加更多照片 -->
+        </div>
+    </div>
+    
+    
+</body>
+</html>
